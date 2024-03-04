@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: none;
 }
 ul li{
     list-style-type: none;
@@ -43,6 +44,7 @@ body{
     -o-transform: translate(-50% ,-50%);
     pointer-events: none;
     border: 1px solid #000000;
+    z-index: 9999999999;
 }
 
 .cursorsm{
@@ -64,6 +66,7 @@ body{
     -o-transform: translate(-50%, -50%) ;
     transition: 0.1s;
     -webkit-transition: 0.1s;
+    z-index: 9999999999;
     -moz-transition: 0.1s;
     -ms-transition: 0.1s;
     -o-transition: 0.1s;
@@ -77,7 +80,8 @@ nav{
 #btn {
     display: flex;
     flex-direction: column;
-    margin-left: 250px;
+    margin-left: 25px;
+    margin-top: 20px;
     background: transparent;
     border: none;
 }
@@ -111,6 +115,7 @@ nav{
     -o-transition: 0.2s;
     transition: 0.2s;
 }
+
 .obr .line_2{
     transform: scale(0);
     -webkit-transform: scale(0);
@@ -271,6 +276,7 @@ input{
     -moz-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     -o-transform: translate(0, -50%);
+    margin-right: 30px;
 
 
 }
@@ -291,5 +297,18 @@ button[type="button"]{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 
+}
+.code{
+    width: 500px;
+    height: 500px;
+    background: rgb(0, 0, 0);
+    margin: auto;
+    overflow-y:scroll;
+    color: #fff;
+    padding: 10px 20px;
+
+}
+.code::-webkit-scrollbar{
+    width: 10px;
 }
 /***** End Section *****/

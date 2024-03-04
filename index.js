@@ -38,3 +38,11 @@ icon.addEventListener("click", () => {
     icon.src = "./img/eye-close.png";
   }
 });
+var Obj = new XMLHttpRequest();
+Obj.onreadystatechange = function () {
+  if (Obj.readyState == 4 && Obj.status == 200) {
+    document.querySelector(".sm").innerHTML = Obj.responseText;
+  }
+};
+Obj.open("GET", "./index.js");
+Obj.send();
